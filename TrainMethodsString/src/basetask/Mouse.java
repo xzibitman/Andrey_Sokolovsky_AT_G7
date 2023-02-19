@@ -1,6 +1,5 @@
 package basetask;
 
-import java.sql.SQLOutput;
 
 public class Mouse {
 
@@ -8,7 +7,7 @@ public class Mouse {
     public String name;
     public int age;
 
-   public Mouse() {
+    public Mouse() {
         this.name = "Ben";
         this.age = 12;
     }

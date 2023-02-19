@@ -10,11 +10,12 @@ public class Sortirovka {
         int[] array = new int[7];
         for (int i = 0; i < array.length; i++) {
             array[i] = random.nextInt(7);
-            printArray(array);
-            selSort(array);
-            printArray(array);
+
 
         }
+        printArray(array);
+        selSort(array);
+        printArray(array);
     }
 
     public static void printArray(int[] array) {

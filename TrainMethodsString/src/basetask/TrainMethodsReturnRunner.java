@@ -13,7 +13,7 @@ public class TrainMethodsReturnRunner {
 
 
         char newChar = znak.returnNewChar();
-        System.out.println("метод returnNewChar вернул " + newChar+newChar);
+        System.out.println("метод returnNewChar вернул " + newChar + newChar);
 
         float newFloat = znak.returnNewFloat();
         System.out.println("метод returnNewFloat вернул " + newFloat);

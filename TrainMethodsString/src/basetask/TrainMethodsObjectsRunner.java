@@ -2,7 +2,7 @@ package basetask;
 
 public class TrainMethodsObjectsRunner {
     public static void main(String[] args) {
-        TrainMethodsObjects newObj  = new TrainMethodsObjects();
+        TrainMethodsObjects newObj = new TrainMethodsObjects();
 
         Mouse mouse = new Mouse();
         newObj.processMouse(mouse);
