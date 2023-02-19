@@ -34,7 +34,7 @@ public class TrainMethodsIf {
         }
     }
 
-    public double returnNewDouble(double e) {  // СПРОСИТЬ У ЖЕНИ
+    public double returnNewDouble(double e) {
         if (e < 80) {
             if (e > 30) {
                 return (e + 87);

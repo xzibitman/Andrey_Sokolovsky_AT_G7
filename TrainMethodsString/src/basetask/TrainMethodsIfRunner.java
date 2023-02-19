@@ -11,8 +11,8 @@ public class TrainMethodsIfRunner {
         System.out.println(uslovie.returnNewChar('h'));
         uslovie.returnNewFloat(0.63f);
         System.out.println(uslovie.returnNewFloat(0.63f));
-        //uslovie.returnNewDouble(30.1);
-        //System.out.println(uslovie.returnNewDouble(30.1));
+        uslovie.returnNewDouble(30.1);
+        System.out.println(uslovie.returnNewDouble(30.1));
         uslovie.returnNewBoolean(false);
         System.out.println();
 
