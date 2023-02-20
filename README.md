@@ -1,1 +1,0 @@
-# Andrey_Sokolovsky_AT_G7
