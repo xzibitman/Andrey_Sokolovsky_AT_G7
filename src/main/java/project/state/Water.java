@@ -1,15 +1,10 @@
 package project.state;
 
 public abstract class Water {
-    private String color;
-    private String transparency;
-    private String smell;
-    private double temperature;
-
-    //public Water(String color, String transparency, String smell) {
-    //    this.color = color;
-    //    this.transparency = transparency;
-    //    this.smell = smell;
+    private String color = "no";
+    private String transparency = "transparent";
+    private String smell = "no";
+    private double temperature = 0;
 
     public String getColor() {
         return color;
