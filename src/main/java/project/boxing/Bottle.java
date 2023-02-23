@@ -2,25 +2,26 @@ package project.boxing;
 
 import project.state.Bubble;
 import project.state.SparklingWater;
+import project.state.Water;
 
 public class Bottle {
-    private double bottleVolume;
+
+    private double volume;
+    private Water boolean water = true;
     private SparklingWater bottleWater;
 
-    public void open() {
-        bottleWater.degas();
+    public Bottle(double volume, String gas) {
+        this.volume = volume;
+        this.bottleWater = new SparklingWater(volume, gas);
+        double bubbleAmount = calcBubbleAmount(volume);
     }
 
-    public Bottle(double bottleVolume, String gas) {
-        this.bottleVolume = bottleVolume;
-        this.bottleWater = new SparklingWater(bottleVolume, gas);
-    }
     public double getBottleVolume() {
-        return bottleVolume;
+        return volume;
     }
 
-    public void setBottleVolume(double bottleVolume) {
-        this.bottleVolume = bottleVolume;
+    public void setBottleVolume(double volume) {
+        this.volume = volume;
     }
 
     public SparklingWater getBottleWater() {
@@ -30,4 +31,20 @@ public class Bottle {
     public void setBottleWater(SparklingWater bottleWater) {
         this.bottleWater = bottleWater;
     }
+
+    private double calcBubbleAmount(double volume) {
+        return volume * 10000;
+    }
+
+    public void setOpened(boolean water) {
+        this.water = water;
+    }
+
+    public void open() {
+        this.setOpened(true);
+    }
+    public void warm(int temperature) {
+        this.setTemperature();
+    }
+
 }
