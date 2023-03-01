@@ -1,21 +1,22 @@
-package homework.day9.playground.essence.craft.field;
+package homework.day9.playground.essence.craft.air;
 
+import homework.day9.playground.essence.Flyable;
 import homework.day9.playground.essence.Matter;
-import homework.day9.playground.essence.craft.Rideable;
 import homework.day9.playground.essence.craft.Transportable;
 
-public abstract class Vehicle extends Matter implements Transportable, Rideable {
+public abstract class Aircraft extends Matter implements Flyable, Transportable {
     protected String name;
+
+    public void flyable() {
+
+    }
 
     public void transportable() {
 
     }
 
-    public void rideable() {
 
-    }
-
-    public Vehicle(int mass, String name) {
+    public Aircraft(int mass, String name) {
         super(mass);
         this.name = name;
     }
@@ -27,4 +28,6 @@ public abstract class Vehicle extends Matter implements Transportable, Rideable 
     public void setName(String name) {
         this.name = name;
     }
+
+
 }
