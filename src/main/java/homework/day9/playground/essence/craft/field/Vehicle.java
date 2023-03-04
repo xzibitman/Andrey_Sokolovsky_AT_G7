@@ -6,6 +6,8 @@ import homework.day9.playground.essence.craft.Transportable;
 
 public abstract class Vehicle extends Matter implements Transportable, Rideable {
     protected String name;
+    int pointA;
+    int pointB;
 
     public void transportable() {
 
@@ -26,5 +28,12 @@ public abstract class Vehicle extends Matter implements Transportable, Rideable 
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public int move(int pointA, int pointB) {
+        this.pointA = pointA;
+        this.pointB = pointB;
+        System.out.printf("I am %s, my name is %s and I am moving from point %d to point %d", getClass().getSimpleName(), this.name, this.pointA, this.pointB);
+        return pointB - pointA;
     }
 }
