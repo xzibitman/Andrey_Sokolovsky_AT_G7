@@ -10,7 +10,7 @@ public class TransportableProcessor {
 
     public void runTransportable(Transportable transportable, int pointA, int pointB) {
         int returnMove = transportable.move(pointA, pointB);
-        System.out.printf("Transportable %s was moved to %d points", getClass().getSimpleName(), returnMove);
+        System.out.printf(" Transportable %s was moved to %d points. ", getClass().getSimpleName(), returnMove);
     }
 
     public void runTransportable(Transportable transportable) {
@@ -18,7 +18,7 @@ public class TransportableProcessor {
         int pointB = CoordinatesGenerator.generateCoordinate();
         int destination = transportable.move(pointA, pointB);
 
-        System.out.printf("Transportable %s was moved to %d points", getClass().getSimpleName(), destination);
+        System.out.printf(" Transportable %s was moved to %d points. ", getClass().getSimpleName(), destination);
 
     }
 }
