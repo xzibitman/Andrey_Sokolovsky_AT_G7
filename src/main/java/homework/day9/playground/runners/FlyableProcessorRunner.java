@@ -15,7 +15,7 @@ public class FlyableProcessorRunner {
         FlyableProcessor flyableProcessor = new FlyableProcessor();
 
         Flyable flyableCopter = new Copter(223, "Mi8 Flyable");
-       Flyable flyablePlane = new Plane(3452, "Boeing 837 Flyable");
+        Flyable flyablePlane = new Plane(3452, "Boeing 837 Flyable");
         Flyable flyableRocket = new Rocket(7623, "Super Heavy Flyable");
         Flyable flyableFly = new Fly(23, "Domestica Flyable");
         Flyable flyableMosquito = new Mosquito(12, "Vulgaris Flyable");

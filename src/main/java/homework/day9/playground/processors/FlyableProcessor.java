@@ -13,7 +13,8 @@ public class FlyableProcessor extends DirectionGenerator implements Flyable {
     }
 
     public void runFlyable(Flyable flyable) {
-        flyable.fly(generateDirection());
+        flyable.fly(DirectionGenerator.generateDirection());
+
     }
 
     public void runFlyable(Flyable flyable, String direction) {

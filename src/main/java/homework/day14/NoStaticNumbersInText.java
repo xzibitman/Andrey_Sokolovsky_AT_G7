@@ -1,6 +1,6 @@
 package homework.day14;
 
-public class NumbersInText {
+public class NoStaticNumbersInText {
     public static void findNumbers(String str) {
         String[] find = str.split("");
         int counter = 0;
@@ -20,7 +20,5 @@ public class NumbersInText {
             System.out.printf(array[k] + " ");
         }
     }
+
 }
-
-
-

@@ -4,25 +4,20 @@ import java.util.Random;
 
 public class DirectionGenerator {
     public static String generateDirection() {
+        int randomNumber = 1 + (int) (Math.random() * 39);
         String direction = "direction name";
-        int min = 1;
-        int max = 40;
-        int diff = max - min;
-        Random random = new Random();
-        int i = random.nextInt(diff + 1);
-        if (i > 1 && i < 9) {
+        if (randomNumber >= 1 && randomNumber <= 9) {
             direction = "NORTH";
         }
-        if (i > 10 && i < 19) {
+        if (randomNumber >= 10 && randomNumber <= 19) {
             direction = "SOUTH";
         }
-        if (i > 20 && i < 29) {
+        if (randomNumber >= 20 && randomNumber <= 29) {
             direction = "WEST";
         }
-        if (i > 30 && i > 39) {
+        if (randomNumber >= 30 && randomNumber <= 39) {
             direction = "EAST";
         }
         return direction;
-
     }
 }

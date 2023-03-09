@@ -10,6 +10,8 @@ public class StringStaticRunner {
         currentDate.date();
         ChangeFormatDate changeFormatDate = new ChangeFormatDate();
         changeFormatDate.changeFormat("22.00 07.09.2020");
+        NumbersInText numbersInText = new NumbersInText();
+        numbersInText.findNumbers("неизвестный 598 текст 1247");
 
     }
 
