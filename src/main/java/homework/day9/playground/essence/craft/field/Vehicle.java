@@ -9,14 +9,6 @@ public abstract class Vehicle extends Matter implements Transportable, Rideable 
     int pointA;
     int pointB;
 
-    public void transportable() {
-
-    }
-
-    public void rideable() {
-
-    }
-
     public Vehicle(int mass, String name) {
         super(mass);
         this.name = name;

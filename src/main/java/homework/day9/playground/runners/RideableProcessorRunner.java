@@ -26,11 +26,6 @@ public class RideableProcessorRunner {
             String name = "Anonymous";
 
             @Override
-            public void rideable() {
-
-            }
-
-            @Override
             public void drive(String direction) {
                 System.out.printf("I am %s, my name is %s and I amd drive to %s%n",
                         this.getClass().getSimpleName(), this.name, direction);

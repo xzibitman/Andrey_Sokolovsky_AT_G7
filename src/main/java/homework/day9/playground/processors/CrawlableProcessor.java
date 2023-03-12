@@ -16,11 +16,6 @@ public class CrawlableProcessor implements Crawlable {
 
     }
 
-    @Override
-    public void crawlable() {
-
-    }
-
     public void runCrawlable(Crawlable crawlable) {
         String direction = DirectionGenerator.generateDirection();
         int distance = DistanceGenerator.generateDistance();
@@ -32,6 +27,7 @@ public class CrawlableProcessor implements Crawlable {
         crawlable.crawl(direction, distance);
 
     }
+
     public void runCrawlable(Crawlable crawlable, String direction) {
         crawlable.crawl(direction);
 

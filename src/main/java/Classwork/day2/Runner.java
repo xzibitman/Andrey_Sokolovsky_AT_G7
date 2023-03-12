@@ -8,13 +8,8 @@ public class Runner {
         Read readText = new Read();
         readText.read();
         readText.write();
-
     }
-//    Scanner scanner = new Scanner(System.in);
-//    while (scanner.hasNext()){
-//        String incoming = scanner.nextLine();
-//        System.out.printf("Just got '%s' text!", incoming);
-//
-//
-//    }
+
+
 }
+

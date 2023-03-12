@@ -6,10 +6,6 @@ public class Beetle extends Insect implements Crawlable {
         super(mass, name);
     }
 
-    public void crawlable() {
-
-    }
-
     @Override
     public void crawl(String direction, int distance) {
         String beetleText = "vz-vz-vzz-zz..";
