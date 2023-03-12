@@ -6,11 +6,6 @@ import homework.day9.playground.utils.DirectionGenerator;
 public class RideableProcessor implements Rideable {
 
 
-    @Override
-    public void rideable() {
-
-    }
-
     public void drive(String direction) {
 
     }

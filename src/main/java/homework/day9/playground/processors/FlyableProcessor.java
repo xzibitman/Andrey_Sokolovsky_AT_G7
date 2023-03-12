@@ -4,9 +4,6 @@ import homework.day9.playground.essence.Flyable;
 import homework.day9.playground.utils.DirectionGenerator;
 
 public class FlyableProcessor extends DirectionGenerator implements Flyable {
-    public void flyable() {
-
-    }
 
     public void fly(String direction) {
 

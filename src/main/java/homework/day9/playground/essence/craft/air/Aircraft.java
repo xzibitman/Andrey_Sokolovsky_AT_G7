@@ -10,15 +10,6 @@ public abstract class Aircraft extends Matter implements Flyable, Transportable 
     int pointA;
     int pointB;
 
-    public void flyable() {
-
-    }
-
-    public void transportable() {
-
-    }
-
-
     public Aircraft(int mass, String name) {
         super(mass);
         this.name = name;

@@ -5,11 +5,6 @@ public class Crocodile extends Vertebrata implements Crawlable {
         super(mass, name);
     }
 
-
-    public void crawlable() {
-
-    }
-
     @Override
     public void crawl(String direction, int distance) {
         String crocText = "wr-wr-wrr-r..";

@@ -18,11 +18,6 @@ public class CrawlableProcessorRunner extends CrawlableProcessor {
             String name = "Anonymous";
 
             @Override
-            public void crawlable() {
-
-            }
-
-            @Override
             public void crawl(String direction, int distance) {
                 System.out.printf("I am %s, my name is %s and I am crawling to %s for %d units%n",
                         this.getClass().getSimpleName(), name, direction, distance);
