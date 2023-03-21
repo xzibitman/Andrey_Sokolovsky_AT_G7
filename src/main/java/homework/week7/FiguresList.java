@@ -25,5 +25,8 @@ public class FiguresList {
         } catch (UnsupportedOperationException e) {
             System.out.println("нельзя добавить элемент в Arrays.asList");
         }
+        for (String text : figures) {
+            System.out.print(text + " ");
+        }
     }
 }
