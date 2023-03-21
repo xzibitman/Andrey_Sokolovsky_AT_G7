@@ -12,7 +12,7 @@ public class FiguresList {
         int counter = 0;
 
         for (String text : figures) {
-            if (text.contains("и")) {       // разобраться как написать НЕ содержит
+            if (!text.contains("и")) {
                 counter++;
             }
         }
@@ -22,11 +22,8 @@ public class FiguresList {
             for (String text : figures) {
                 System.out.println(text + " ");
             }
-
-        }
-        catch (UnsupportedOperationException e) {
+        } catch (UnsupportedOperationException e) {
             System.out.println("нельзя добавить элемент в Arrays.asList");
         }
-
     }
 }
