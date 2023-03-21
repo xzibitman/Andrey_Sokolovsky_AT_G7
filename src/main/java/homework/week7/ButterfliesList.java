@@ -1,11 +1,12 @@
 package homework.week7;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
 public class ButterfliesList {
     public static void main(String[] args) {
-        List<String> butterflies = new LinkedList<>();
+        List<String> butterflies = new ArrayList<>();
         butterflies.add("Common blue");
         butterflies.add("Swallowtail");
         butterflies.add("Aglais io");
