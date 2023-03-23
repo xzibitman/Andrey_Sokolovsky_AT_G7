@@ -27,12 +27,13 @@ public class Water {
         this.smell = smell;
     }
 
-//    @Override
-//    public boolean equals(Object o) {
-//        if (this == o) return true;
-//        if (!(o instanceof Water water)) return false;
-//        return Objects.equals(color, water.color) && Objects.equals(smell, water.smell);
-//    }
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Water water = (Water) o;
+        return Objects.equals(color, water.color) && Objects.equals(smell, water.smell);
+    }
 
     @Override
     public int hashCode() {
