@@ -1,13 +1,11 @@
 package homework.week7;
 
-import java.io.BufferedWriter;
-import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class СarsList {
+public class CarsList {
     public static void main(String[] args) throws IOException {
         List<String> cars = new ArrayList<>();
         cars.add("Мерс");
@@ -32,7 +30,7 @@ public class СarsList {
             }
         }
         for (String text : cars) {
-            System.out.println(text);
+            System.out.print(text);
         }
     }
 }
