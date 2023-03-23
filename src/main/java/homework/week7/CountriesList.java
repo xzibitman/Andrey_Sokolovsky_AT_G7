@@ -13,11 +13,13 @@ public class CountriesList {
         for (String text : countries) {
             System.out.println(text + "," + " ");
         }
-        for (int counter = 0; counter < countries.size(); counter++) {
-            if (countries.get(counter).length() > 7) {
-                System.out.println(counter++);
+        int counter = 0;
+        for (int i = 0; i < countries.size(); i++) {
+            if (countries.get(i).length() < 7) {
+                counter++;
             }
         }
+        System.out.println(counter);
         for (int i = 0; i < countries.size(); i++) {
             System.out.println(countries.get(i));
         }
