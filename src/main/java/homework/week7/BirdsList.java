@@ -9,17 +9,23 @@ public class BirdsList {
         for (String text : birds) {
             System.out.println("--" + text + "--");
         }
-//        String vowels = "у";     НЕ готово
-//        for (String text : birds) {
-//            for (int i = 0; i < birds.size(); i++) {
-//                switch (text){
-//                    case 'у', 'е', 'ы', 'а', 'о', 'э', 'и', 'ю'
-//                    System.out.println(i++);
-//                }
-        for (int i = 0; i < birds.size(); i++) {
-            System.out.print(birds.get(i) + " ");
+        int counter = 0;
+        for (String bird : birds) {
+            int counterVowels = 0;
+            char[] arrayChars = {'у', 'е', 'ё', 'ы', 'а', 'о', 'э', 'я', 'и', 'ю'};
+            char[] arrayBirds = bird.toCharArray();
+            for (int i = 0; i < arrayBirds.length; i++) {
+                for (int k = 0; k < arrayChars.length; k++) {
+                    if (arrayBirds[i] == arrayChars[k]) {
+                        counterVowels++;
+                    }
+                }
+            }
+            if (counterVowels > 1) {
+                counter++;
+            }
         }
-        System.out.println("");
+        System.out.println("Птиц с гласными больше одной = " + counter);
         birds.set(3, "Синица");
         for (String text : birds) {
             System.out.print(text + " ");
